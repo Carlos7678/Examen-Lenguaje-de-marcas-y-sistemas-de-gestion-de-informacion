@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div class="container">
+            <br>
+            <header>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="navegacion.html">LM</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navegacion">
+                            <ul class="nav navbar-nav ">
+                                <li><a href="home.html">Home</a></li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle=dropdown>Ejercicios<span class="badge badge-light">3</span><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="grids.html">Grid</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="formulario.html">Formulario</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="tabla.html">Tabla</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                                <form action="" class="navbar-form navbar-right" role="search">
+                                    <input type="text" class="form-control" placeholder="buscar">
+                                </form>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </nav>
+            <h3>Contactos</h3>
+        </header>
+        <hr>
+        <form>
+            <div class="form-group">
+                <h6><label  for="nombre">Nombres:</label></h6>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <h6><label for="Apellidos">Apellidos:</label></h6>
+                <input type="text" class="form-control" id="Apellidos" name="Apellidos">
+            </div>
+            <div class="form-group">
+                <h6><label for="email">E-mail:</label></h6>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ex: myname@example.com">
+            </div>
+            <div class="form-group">
+                <h6><label for="telefono">Telefono:</label></h6>
+                <input type="tel" class="form-control" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <h6>Escriba su mensaje:</h6>
+                <textarea id="mensaje" name="mensaje" width="100%" rows="5" cols="80"></textarea>
+                <br>
+            </div>
+                <div class="form-group">
+            <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </div> 
+    </body>
+</html>
